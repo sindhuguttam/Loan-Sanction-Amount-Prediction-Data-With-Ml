@@ -1,0 +1,83 @@
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Prediction Form</h1>
+        <form action="/predict" method="post">
+            <label for="Gender">Gender:</label>
+            <input type="text" id="Gender" name="Gender">
+            
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age">
+            
+            <label for="Income (USD)">Income (USD):</label>
+            <input type="number" id="Income (USD)" name="Income (USD)" step="0.01">
+            
+            <label for="Income Stability">Income Stability:</label>
+            <input type="text" id="Income Stability" name="Income Stability">
+            
+            <label for="Profession">Profession:</label>
+            <input type="text" id="Profession" name="Profession">
+            
+            <label for="Type of Employment">Type of Employment:</label>
+            <input type="text" id="Type of Employment" name="Type of Employment">
+            
+            <label for="Location">Location:</label>
+            <input type="text" id="Location" name="Location">
+            
+            <label for="Loan Amount Request (USD)">Loan Amount Request (USD):</label>
+            <input type="number" id="Loan Amount Request (USD)" name="Loan Amount Request (USD)" step="0.01">
+            
+            <label for="Current Loan Expenses (USD)">Current Loan Expenses (USD):</label>
+            <input type="number" id="Current Loan Expenses (USD)" name="Current Loan Expenses (USD)" step="0.01">
+            
+            <label for="Expense Type 1">Expense Type 1:</label>
+            <input type="text" id="Expense Type 1" name="Expense Type 1">
+            
+            <label for="Expense Type 2">Expense Type 2:</label>
+            <input type="text" id="Expense Type 2" name="Expense Type 2">
+            
+            <label for="Dependents">Dependents:</label>
+            <input type="number" id="Dependents" name="Dependents">
+            
+            <label for="Credit Score">Credit Score:</label>
+            <input type="number" id="Credit Score" name="Credit Score" step="0.01">
+            
+            <label for="No. of Defaults">No. of Defaults:</label>
+            <input type="number" id="No. of Defaults" name="No. of Defaults">
+            
+            <label for="Has Active Credit Card">Has Active Credit Card:</label>
+            <input type="text" id="Has Active Credit Card" name="Has Active Credit Card">
+            
+            <label for="Property ID">Property ID:</label>
+            <input type="number" id="Property ID" name="Property ID">
+            
+            <label for="Property Age">Property Age:</label>
+            <input type="number" id="Property Age" name="Property Age" step="0.01">
+            
+            <label for="Property Type">Property Type:</label>
+            <input type="number" id="Property Type" name="Property Type">
+            
+            <label for="Property Location">Property Location:</label>
+            <input type="text" id="Property Location" name="Property Location">
+            
+            <label for="Co-Applicant">Co-Applicant:</label>
+            <input type="number" id="Co-Applicant" name="Co-Applicant">
+            
+            <label for="Property Price">Property Price:</label>
+            <input type="number" id="Property Price" name="Property Price" step="0.01">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html> 
